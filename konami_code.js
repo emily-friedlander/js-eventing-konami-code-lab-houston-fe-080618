@@ -20,6 +20,9 @@ function onKeyDownhandler(e) {
   const key = parseInt(e.which);
   if (key === code[index]){
     index++;
+    if (index === alphabet.length){
+      alert('congrts code correct')
+    }
   }
   else {
     index=0;
